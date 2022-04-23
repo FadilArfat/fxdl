@@ -449,3 +449,5 @@
 var rellax = new Rellax(".rellax", {
   horizontal: true,
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

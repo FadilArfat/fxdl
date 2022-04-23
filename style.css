@@ -1,19 +1,68 @@
 body {
-  font-family: "Work Sans", sans-serif !important;
-  font-weight: 300 !important;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
-  background-color: #0d0d0d !important;
-  height: 500vh !important;
+  background-color: #0d0d0d;
+  height: 500vh;
+  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
+body,
+::-webkit-scrollbar,
+.imgrev::before {
+  background: #0d0d0d;
+  /*#231f20;*/
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-moz-selection,
+::selection,
+::-webkit-selection {
+  color: inherit;
+  background: transparent;
+}
+
+@font-face {
+  font-family: circular;
+  src: url(fonts/CircularStd-Book.woff2);
+}
+
+@font-face {
+  font-family: sequel;
+  src: url(fonts/MonumentExtended-Bold.woff);
+}
+
+@font-face {
+  font-family: circular_bold;
+  src: url(fonts/CircularStd-Medium.woff2);
+}
+
 .box {
-  background-color: peachpuff;
+  background-color: #5f95ff;
+  position: relative;
   width: 450px;
   height: 500px;
-  margin-left: 450px;
-  margin-right: 450px;
+  z-index: 0;
+}
+.box-project {
+  width: 450px;
+  height: 450px;
   z-index: 0;
 }
 
@@ -27,22 +76,89 @@ body {
   white-space: nowrap;
 }
 
+.text-jumbo2 h1 {
+  z-index: 1;
+  color: white;
+  font-size: 120px;
+
+  opacity: 0.3;
+  width: 100%;
+}
+
+.outline {
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: transparent;
+}
+
+h1 .row > span {
+  line-height: 108%;
+}
+
+.span {
+  color: white;
+}
+
+h1 {
+  white-space: nowrap;
+  font-size: 8.1vw;
+  color: #ffffff;
+  font-family: sequel, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight: normal;
+}
+
+h1 .row {
+  margin-bottom: -2.5vw;
+  padding: 0 10px 0 3px;
+  margin-left: -4px;
+}
+
 .bacaan-satu {
+  top: 0;
+  margin-top: 0;
+  padding-top: 0;
   margin-left: 514px;
   margin-right: 514px;
   color: white;
 }
 
+.img-jumbo {
+  max-height: 450px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.img-jumbow {
+  max-height: 450px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 a {
-  color: white !important;
+  color: white;
+}
+
+h5 {
+  font-family: circular, sans-serif;
+  color: white;
+}
+
+h4 {
+  font-family: sequel, sans-serif;
+  color: white;
 }
 
 h1,
 h2,
 h3,
-h4,
-h5,
 h6 {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: sequel, sans-serif;
   font-weight: 900 !important;
+  color: white;
 }
